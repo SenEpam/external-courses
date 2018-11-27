@@ -1,0 +1,125 @@
+form {
+	font: 14px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	width: 70%;
+	max-width: 750px;
+}
+
+.head {
+	border-bottom: 5px solid black;
+	height: 60px;
+	padding-top: 40px;
+}
+.requir {
+	position: relative;
+	top: -20px;
+	color: red;
+}
+
+.clrFont {
+	color: rgb(187, 187, 187);
+	margin-left: 40px;
+}
+h1 {
+	margin-top: -1px;
+}
+fieldset {
+	border: 0;
+	min-width: 60%;
+}
+
+p {
+	display: block;
+	position: relative;
+	top: 50px;
+}
+
+input {
+	border-radius: 15px;
+	font: 14px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin: 5px;
+}
+
+.content label {
+	color: rgb(0, 0, 0);
+	display: block;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	height: 60px;
+}
+
+.content input {
+	background: #fff;
+	border: 1px solid #c6c7cc;
+	padding: 10px;
+	margin-top: 5px;
+	margin-left: 35px;
+	width: 200px;
+}
+
+.footer {
+	background: white;
+	margin: 30px 0 0 60px;
+}
+
+.footer .btn {
+	border: 1px solid #c6c7cc;
+	background-color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 10px 30px;
+}
+
+textarea {
+	background: #fff;
+	border: 1px solid #c6c7cc;
+	min-width: 40%;
+	max-width: 45%;
+	min-height: 60px;
+	max-height: 70px;
+	border-radius: 5%;
+	margin-top: 10px;
+	margin-left: 70px;
+}
+.redDiv1 {
+	position: relative;
+    top: -220px;
+    left: 370px;
+	height: 30px;
+	width: 150px;
+	background-color: red;
+	color: white;
+    text-align: center;
+    line-height:30px;
+	margin-left: 20px;
+}
+
+.redDiv2 {
+	position: relative;
+    top: -330px;
+    left:390px;
+	height: 30px;
+	width: 150px;
+	background-color: red;
+	color: white;
+    text-align: center;
+    line-height:30px;
+}
+
+.redDiv1::after {
+	content: '';
+	position: absolute;
+	left: -20px;
+	bottom: 7px;
+	border: 8px solid transparent;
+	border-right: 15px solid red;
+}
+
+.redDiv2::after {
+	content: '';
+	position: absolute;
+	left: -20px;
+	bottom: 7px;
+	border: 8px solid transparent;
+	border-right: 15px solid red;
+}
