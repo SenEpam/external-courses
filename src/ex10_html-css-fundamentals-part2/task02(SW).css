@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+#table {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgb(13, 90, 141);
+}
+
+#table tr:hover {
+    background: rgb(223, 224, 228);
+}
+
+#table th {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+}
+
+#table td {
+    padding: 15px;
+}
+
+.headerRow {
+    height: 25px;
+    background: rgb(227, 232, 238);
+}
+
+.oddRow {
+    background: rgb(242, 246, 250);
+}
+
+.evenRow {
+    background: rgb(227, 232, 238);
+}
+
+.textCapitalize {
+    text-transform: capitalize;
+}

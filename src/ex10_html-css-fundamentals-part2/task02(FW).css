@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+table:last-child {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgb(13, 90, 141);
+}
+
+tr:hover {
+    background: rgb(180, 187, 214);
+    z-index: 9999;
+}
+
+table:last-child th {
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgb(13, 90, 141);
+}
+
+table:last-child td:first-child {
+    text-transform: capitalize;
+}
+
+td {
+    padding: 15px;
+}
+
+table:last-child tr:first-child {
+    height: 25px;
+    text-transform: uppercase;
+}
+
+table:last-child tr:nth-child(even) {
+    background: rgb(242, 246, 250);
+    z-index: 0;
+}
+
+table:last-child tr:nth-child(odd) {
+    background: rgb(227, 232, 238);
+    z-index: 0;
+}
+
+table:last-child tr:hover {
+    background: rgb(233, 233, 233);
+}
