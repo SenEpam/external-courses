@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: verdana, arial, sans-serif;
+}
+
+body {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    color: rgb(47, 54, 74);
+}
+
+article {
+    background-color: rgb(238, 231, 247);
+    padding: 1em;
+    flex: 1 1 90%;
+}
+
+aside {
+    font-size: 12px;
+    color: rgb(120, 130, 157);
+    flex: 1 1 auto;
+    background-color: rgb(25, 32, 46);
+    min-height: 800px;
+}
+
+.sideBarFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(25, 32, 46);
+}
+
+.buttonDivFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 75%;
+    min-width: 75%;
+    background-color: rgb(31, 38, 55);
+}
+
+button {
+    padding: 1%;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 2em;
+    border-radius: 10px;
+    background-color: rgb(242, 121, 90);
+    flex: 1 1 auto;
+    height: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(161, 79, 59);
+}
+
+button:active {
+    position: relative;
+    top: 3px;
+}
+
+.buttonFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.plus {
+    height: 15px;
+    width: 15px;
+}
+
+.menu {
+    cursor: pointer;
+    background-color: rgb(31, 38, 55);
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu div:hover {
+    color: white;
+    background-color: rgb(21, 164, 240);
+}
+
+.cellImgDiv {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    height: 36px;
+    padding-top: 10px;
+}
+
+.cellImgDiv:active {
+    position: relative;
+    top: 5px;
+}
+
+.cellImg {
+    width: 16px;
+    height: 16px;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.menu div:hover .cellImg {
+    filter: brightness(0) invert(1);
+}
+
+ul {
+    margin-left: -20px;
+}
+
+li {
+    cursor: pointer;
+    list-style-type: none;
+    padding-top: 10px;
+    margin-left: 8px;
+}
+
+.firstLi:before {
+    color: rgb(230, 76, 102);
+    content: "•";
+    padding-right: 10px;
+}
+
+.secondLi:before {
+    color: rgb(255, 171, 0);
+    content: "•";
+    padding-right: 10px;
+}
+
+.thirdLi:before {
+    color: rgb(0, 121, 221);
+    content: "•";
+    padding-right: 10px;
+}
+
+.fourthLi:before {
+    color: rgb(120, 116, 207);
+    content: "•";
+    padding-right: 10px;
+}
+
+li:hover {
+    color: white;
+}
+
+li:active {
+    position: relative;
+    top: 5px;
+}
+
+.historyMain {
+    color: rgb(79, 90, 111);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 220px;
+    margin-top: 20px;
+}
+
+.historyChild1 {
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+}
+
+.historyChild2 {
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+    margin-top: 70px;
+}
+
+.historyImg {
+    width: 16px;
+    height: 16px;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.historyDiv {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+div span {
+    color: rgb(120, 130, 157);
+}
+
+header,
+footer {
+    flex: 0 0 5em;
+    max-height: 40px;
+    background-color: rgb(47, 54, 74);
+    line-height: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        min-height: 100vh;
+    }
+    main {
+        flex-direction: row;
+        min-height: 100%;
+        flex: 1 1 auto;
+    }
+}

@@ -1,0 +1,85 @@
+body {
+        background-color: #bebebe;
+}
+    
+    .block{
+        position: absolute;
+        top:40px;
+        left:220px;
+        width: 200px;
+        height: 400px;
+    }
+    .rect1 {
+        position: absolute;
+        width:200px;
+        height: 20px;
+        top:70px;
+        background-color: #727272   
+ }
+    
+    .rect2 {
+        position: absolute;
+        top:398px;
+        width:200px;
+        height: 20px;
+        background-color: #727272   
+     }
+    
+    
+    .ball {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 40px;
+        background: rgb(112, 112, 112);
+        border-radius: 100%;
+        animation: ballJump 1s linear infinite;
+    }
+    
+    @keyframes ballJump {
+        0% {
+            top: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        20% {
+            top: 75%;
+            width: 100px;
+            height: 100px;
+        }
+        25% {
+            top: 80%;
+            width: 110px;
+            height: 50px;
+        }
+        30% {
+            top: 75%;
+            width: 100px;
+            height: 100px;
+        }
+        50% {
+            top: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        70% {
+            top: 25%;
+            width: 100px;
+            height: 100px;
+        }
+        75% {
+            top: 20%;
+            width: 110px;
+            height: 50px;
+        }
+        80% {
+            top: 25%;
+            width: 100px;
+            height: 100px;
+        }
+        100% {
+            top: 50%;
+            width: 100px;
+            height: 100px;
+        }
+}
