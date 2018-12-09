@@ -7,6 +7,7 @@ html,
 body {
     padding: 0;
     margin: 0;
+    height:100%;
 }
 
 body {
@@ -21,12 +22,12 @@ main {
     display: flex;
     flex-direction: column;
     color: rgb(47, 54, 74);
+flex: 1 0 auto;
 }
 
 aside {
     font-size: 12px;
     color: rgb(120, 130, 157);
-    flex: 1 1 auto;
     background-color: rgb(25, 32, 46);
 }
 
@@ -221,10 +222,10 @@ article p {
 
 article {
     background-color: rgb(238, 231, 247);
-    flex: 1 1 90%;
     border: 5px solid green;
     display: flex;
     flex-direction: column;
+    flex-basis: 100%;
 }
 
 
@@ -237,7 +238,6 @@ article {
 
 .catalog {
     background-color: white;
-    flex: 1 0 40%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -261,20 +261,20 @@ article {
 
 header,
 footer {
-    flex: 0 0 5em;
-    max-height: 40px;
+    flex: 0 0 auto;
     background-color: rgb(47, 54, 74);
     line-height: 10px;
     text-align: center;
 }
 
 @media screen and (min-width: 600px) {
+    html,
     body {
-        min-height: 100vh;
-    }
+
+    height:100%;
+}
+
     main {
         flex-direction: row;
-        min-height: 100%;
-        flex: 1 1 auto;
     }
 }
