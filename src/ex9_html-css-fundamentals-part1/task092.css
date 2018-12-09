@@ -1,5 +1,5 @@
 body {
-    padding: 30px;
+    padding: 1rem;
 }
 
 header {
@@ -8,8 +8,7 @@ header {
 
 section {
     background: lightgreen;
-    width: 75%;
-    float: left;
+    grid-area: a;
 }
 
 article {
@@ -27,14 +26,13 @@ section,
 
 /* ========= 2 способ ========*/
 
-.main {
-    position: relative;
+.grid {
+    display: grid;
+    grid-template: "a b";
+    grid-auto-columns: 70% 30%;
 }
 
 aside {
+    grid-area: b;
     background: pink;
-    position: absolute;
-    width: 430px;
-    height: 322px;
-    right: 1px;
 }
