@@ -1,0 +1,34 @@
+body,
+header,
+article,
+section,
+.module {
+    padding: 1rem;
+}
+
+header {
+    background: lightblue;
+}
+
+section {
+    background: lightgreen;
+    flex: 3;
+}
+
+article {
+    background: white;
+    margin: 0 0 1rem 0;
+}
+
+
+/* =х======== 3 способ ========*/
+
+aside {
+    background: pink;
+    flex: 1;
+}
+
+.flexForm {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,38 @@
+body {
+    padding: 1rem;
+}
+
+header {
+    background: lightblue;
+}
+
+section {
+    background: lightgreen;
+    grid-area: a;
+}
+
+article {
+    background: white;
+    margin: 0 0 1rem 0;
+}
+
+header,
+article,
+section,
+.module {
+    padding: 1rem;
+}
+
+
+/* ========= 2 способ ========*/
+
+.grid {
+    display: grid;
+    grid-template: "a b";
+    grid-auto-columns: 70% 30%;
+}
+
+aside {
+    grid-area: b;
+    background: pink;
+}
