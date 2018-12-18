@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+div {
+    border-radius: 10px;
+}
+
+.addBtn {
+    position: absolute;
+    top: 510px;
+    left: 570px;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 11px 32px;
+    border-radius: 50px;
+    font: 33px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(199, 118, 161);
+    z-index: 9999;
+}
+
+.addBtn:active {
+    top: 508px;
+}
