@@ -1,5 +1,5 @@
 html {
-    height: 100%; 
+    height: 100%;
 }
 
 body {
@@ -17,18 +17,9 @@ header {
     border-bottom: 1px solid rgb(231, 231, 231);
 }
 
-.headerTablet {
-    display: none;
-}
-
-.burgerMenu {
-    display: none;
-}
-
-.logoTablet {
-    display: none;
-}
-
+.headerTablet,
+.burgerMenu,
+.logoTablet,
 .search_inputTablet {
     display: none;
 }
@@ -79,7 +70,7 @@ header {
     color: rgb(133, 133, 133);
     visibility: hidden;
     text-align: center;
-    background: #ffffff;
+    background: white;
     border: 1px solid #ccc;
     border-radius: 10px;
     font-size: 19px;
@@ -97,7 +88,7 @@ header {
     color: rgb(133, 133, 133);
     visibility: hidden;
     text-align: center;
-    background: #ffffff;
+    background: white;
     border: 1px solid #ccc;
     border-radius: 10px;
     font-size: 19px;
@@ -116,7 +107,7 @@ header {
     color: rgb(133, 133, 133);
     visibility: hidden;
     text-align: center;
-    background: #ffffff;
+    background: white;
     border: 1px solid #ccc;
     border-radius: 10px;
     font-size: 19px;
@@ -166,7 +157,7 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 14px;
-    background: #ffffff;
+    background: white;
     margin-left: 5%;
     min-width: 85%;
     min-height: 1%;
@@ -185,7 +176,7 @@ li:nth-child(6) {
 
 nav ul li {
     text-align: center;
-    border-right: 1px solid rgb(231, 231, 231);
+    border-right: 1px solid white;
     min-width: calc(28% / 3);
     box-sizing: border-box;
     display: block;
@@ -202,7 +193,7 @@ nav ul li {
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 15px solid rgb(255, 255, 255);
+    border-bottom: 15px solid white;
     margin-top: 3%;
     margin-left: 40%;
 }
@@ -230,6 +221,7 @@ nav ul li {
 .input {
     border: none;
     height: 30px;
+    outline: none
 }
 
 .line {
@@ -278,22 +270,22 @@ main {
     max-height: 800px;
 }
 
-h1 {
+h1,
+h3 {
     position: relative;
     color: RGBA(255, 255, 255, 0.9);
-    font: bold 3.2em Helvetica, Sans-Serif;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.27);
     z-index: 1;
 }
 
+h1 {
+    font: bold 3.2em Helvetica, Sans-Serif;
+}
+
 h3 {
-    position: relative;
-    color: RGBA(255, 255, 255, 0.9);
     font: 45px Helvetica, Sans-Serif;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.307);
     bottom: 40px;
     left: 8%;
-    z-index: 1;
 }
 
 .umper {
@@ -318,7 +310,7 @@ h3 {
 
 .slideButton {
     position: relative;
-    background-color: rgb(244, 244, 244);
+    background-color: white;
     border: none;
     min-height: 202px;
     min-width: 70px;
@@ -372,7 +364,6 @@ h3 {
 }
 
 footer {
-    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
     flex: 0 0 auto;
     color: white;
     background-color: rgb(52, 136, 197);
@@ -427,15 +418,9 @@ footer {
     body {
         height: 100%;
     }
-    .contacts {
-        display: none;
-    }
-    .logo {
-        display: none;
-    }
-    nav {
-        display: none;
-    }
+    .contacts,
+    .logo,
+    nav,
     .slidePhotosDiv {
         display: none;
     }
@@ -468,32 +453,23 @@ footer {
         overflow: hidden;
         flex-direction: column;
     }
-    .lampDiv {
+    .lampDiv,
+    .treeDiv {
         flex-direction: row;
         justify-content: center;
     }
     .treeDiv {
-        justify-content: center;
-        flex-direction: row;
         margin-right: 10px;
     }
-    .lampImg {
-        margin-top: 15px;
-    }
+    .lampImg,
     .treeImg {
         margin-top: 15px;
     }
-    .lampImg img {
-        width: 70px;
-    }
+    .lampImg img,
     .treeImg img {
         width: 70px;
     }
-    .article1 {
-        margin-left: 15px;
-        max-width: 60%;
-        font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
-    }
+    .article1,
     .article2 {
         margin-left: 15px;
         max-width: 60%;

@@ -11,20 +11,26 @@
 
 <body>
     <form action="handler.php" method="GET">
-        <fieldset> 
+        <fieldset>
             <legend>Personal Data: </legend>
             <label>Surname: 
-            <input type="text" name="Surname"></label><br><br>
+            <input type="text" name="Surname"></label><br />
+            <br />
             <label>Name: 
-            <input type="text" name="Name"></label><br><br>
+            <input type="text" name="Name"></label><br />
+            <br />
             <label>Middle name: 
-            <input type="text" name="Patronimic"></label><br><br>
+            <input type="text" name="Patronimic"></label><br />
+            <br />
             <label>You are: </label>
-            <input type="radio" name="Sex" value="male" checked> male<input type="radio" name="Sex" value="female"> female<br><br>
+            <input type="radio" name="Sex" value="male" checked> male<input type="radio" name="Sex" value="female"> female<br />
+            <br />
             <label>Age: 
-            <input type="number" name="Age" min="18" max="101"></label><br><br>
+            <input type="number" name="Age" min="18" max="101"></label><br />
+            <br />
             <label>Country of Residence: 
-            <input type="text" list="CountryOfResidence"></label><br><br>
+            <input type="text" list="CountryOfResidence"></label><br />
+            <br />
             <datalist id="CountryOfResidence">
           <option value="Russia"></option>
           <option value="USA"></option>
@@ -34,10 +40,11 @@
             <label>City: </label>
             <input type="checkbox" name="City" value="Moskow">Moskow
             <input type="checkbox" name="City" value="Ryazan">Ryazan
-            <br>
-            <br>
+            <br />
+            <br />
             <label>Photography: 
-            <input type="file" name="Image"></label><br><br>
+            <input type="file" name="Image"></label><br />
+            <br />
         </fieldset>
 
         <fieldset>
@@ -53,20 +60,25 @@
           <option>Budgeting and planning</option>
          </optgroup>
 	  </select>
-	</label><br><br>
+	</label><br />
+            <br />
             <label>Salary: <input type="range"></label>
-            <br>
-            <br>
+            <br />
+            <br />
             <textarea style="min-width:200px; min-height:150px;" placeholder="Tell us about yourself..."></textarea>
         </fieldset>
         <fieldset>
             <legend>Contact Information</legend>
-            <label>Site: <input type="url" name="Site"></label><br><br>
-            <label>Email: <input type="email" name="Email"></label><br><br>
-            <label>Phone: <input type="tel" name="NumberPhone"></label><br><br>
+            <label>Site: <input type="url" name="Site"></label><br />
+            <br />
+            <label>Email: <input type="email" name="Email"></label><br />
+            <br />
+            <label>Phone: <input type="tel" name="NumberPhone"></label><br />
+            <br />
         </fieldset>
-        <br>
-        <label>Password: <input type="password" required></label><br><br>
+        <br />
+        <label>Password: <input type="password" required></label><br />
+        <br />
         <input type="submit" value="Отправить">
         <input type="reset" value="Очистить">
     </form>
