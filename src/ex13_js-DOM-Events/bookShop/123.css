@@ -1,0 +1,579 @@
+* {
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    color: #fff;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    width: 450px;
+}
+
+.headerCell {
+    width: 150px;
+    font-size: 14px;
+    line-height: 45px;
+    text-align: center;
+    color: rgb(120, 130, 157);
+}
+
+.headerCell:hover {
+    color: white;
+    background-color: rgb(21, 164, 240);
+}
+
+.headerCell:focus {
+    color: white;
+    background-color: rgb(21, 164, 240);
+    outline: none;
+}
+
+.headerCell:hover .headerCellPhoto {
+    border: 2px solid white;
+}
+
+.headerCellPhoto {
+    position: relative;
+    border-radius: 20px;
+    height: 25px;
+    width: 25px;
+    top: 9px;
+    left: -11px;
+}
+
+.headerCellPhoto::after {}
+
+main {
+    display: flex;
+    flex-direction: row;
+    color: rgb(47, 54, 74);
+    flex: 1 0 auto;
+}
+
+aside {
+    font-size: 12px;
+    color: rgb(120, 130, 157);
+    background-color: rgb(25, 32, 46);
+}
+
+.sideBarFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(25, 32, 46);
+}
+
+.buttonDivAdd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 75%;
+    min-width: 75%;
+    background-color: rgb(31, 38, 55);
+}
+
+.buttonAdd {
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(242, 121, 90);
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonAdd:hover {
+    background-color: rgb(161, 79, 59);
+}
+
+.buttonAdd:active {
+    position: relative;
+    top: 3px;
+}
+
+.buttonAdd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.plus {
+    height: 15px;
+    width: 15px;
+}
+
+.menu {
+    cursor: pointer;
+    background-color: rgb(31, 38, 55);
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu div:hover {
+    color: white;
+    background-color: rgb(21, 164, 240);
+}
+
+.cellImgDiv {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    height: 36px;
+    padding-top: 10px;
+}
+
+.cellImgDiv:active {
+    position: relative;
+    top: 5px;
+}
+
+.cellImg {
+    width: 16px;
+    height: 16px;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.menu div:hover .cellImg {
+    filter: brightness(0) invert(1);
+}
+
+ul {
+    margin-left: -20px;
+}
+
+li {
+    cursor: pointer;
+    list-style-type: none;
+    padding-top: 10px;
+    margin-left: 8px;
+}
+
+.firstLi:before {
+    color: rgb(230, 76, 102);
+    content: "•";
+    padding-right: 10px;
+}
+
+.secondLi:before {
+    color: rgb(255, 171, 0);
+    content: "•";
+    padding-right: 10px;
+}
+
+.thirdLi:before {
+    color: rgb(0, 121, 221);
+    content: "•";
+    padding-right: 10px;
+}
+
+.fourthLi:before {
+    color: rgb(120, 116, 207);
+    content: "•";
+    padding-right: 10px;
+}
+
+li:hover {
+    color: white;
+}
+
+li:active {
+    position: relative;
+    top: 5px;
+}
+
+.historyMain {
+    color: rgb(79, 90, 111);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 220px;
+    margin-top: 20px;
+}
+
+.historyChild1 {
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+}
+
+.historyChild2 {
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+    margin-top: 70px;
+}
+
+.historyImg {
+    width: 16px;
+    height: 16px;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.historyDiv {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+div span {
+    color: rgb(120, 130, 157);
+}
+
+
+/*------------------------------------*/
+
+article h1 {
+    margin: 0;
+    padding: 30px;
+    color: rgb(97, 94, 114);
+    font-weight: 100;
+    background-color: rgb(238, 241, 248);
+    border-bottom: 1px solid rgb(187, 208, 255);
+}
+
+.filtersAndSearch {
+    background-color: rgb(238, 241, 248);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 13px 10px;
+}
+
+.filter {
+    color: rgb(97, 94, 114);
+    height: 32px;
+    width: 94px;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: rgb(238, 241, 248);
+    line-height: 32px;
+    text-align: center;
+    border: none;
+}
+
+.filter:focus {
+    background-color: rgb(149, 179, 205);
+    color: white;
+    outline: none;
+}
+
+.filter:hover {
+    background-color: rgb(149, 179, 205);
+    color: white;
+}
+
+.search {
+    position: relative;
+    width: 500px;
+    margin: 10px 15px;
+}
+
+.searchText,
+.searchButton {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.searchText {
+    width: 100%;
+    height: 42px;
+    background-color: white;
+    border: 1px solid rgb(149, 179, 205);
+    padding-left: 15px;
+    border-radius: 20px;
+}
+
+.searchButton {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 6px;
+    left: 457px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.searchButton:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    color: rgb(97, 94, 114);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+article {
+    background-color: rgb(238, 231, 247);
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+
+/*----------------------------------------*/
+
+.mainBooks {
+    flex-grow: 3;
+}
+
+.catalog {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: flex-start;
+    height: 100%;
+}
+
+.cell {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 446px;
+}
+
+.cell:hover {
+    background-color: rgb(238, 241, 248);
+}
+
+.cell:active {
+    position: relative;
+    top: 2px;
+}
+
+.cell_inside {
+    flex: 1;
+    padding: 15px;
+    height: 346px;
+    width: 239px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100px;
+}
+
+.footerCell {
+    width: 50px;
+    font-size: 14px;
+    line-height: 45px;
+    text-align: center;
+    color: rgb(120, 130, 157);
+}
+
+.footerCell:hover {
+    color: white;
+    background-color: rgb(21, 164, 240);
+}
+
+.footerCell:focus {
+    color: white;
+    background-color: rgb(21, 164, 240);
+    outline: none;
+}
+
+header,
+footer {
+    flex: 0 0 auto;
+    background-color: rgb(47, 54, 74);
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 150px;
+        align-items: center;
+    }
+    main {
+        flex-direction: column;
+    }
+    article {
+        background-color: rgb(238, 241, 248);
+    }
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .headerCell {
+        width: 100%;
+    }
+    h1 {
+        align-self: center;
+        width: 336px;
+    }
+    .menu {
+        align-items: center;
+        align-self: center;
+        width: 100%;
+    }
+    .cellImgDiv {
+        width: 100%;
+        padding-left: 30%;
+    }
+    .filtersAndSearch {
+        min-height: 276px;
+        flex-direction: column;
+    }
+    .search {
+        width: 222px;
+        align-self: center;
+    }
+    .searchButton {
+        left: 176px;
+    }
+    .filters {
+        height: 1120px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .filter {
+        height: 120px;
+    }
+    div ul {
+        display: none;
+    }
+    .historyMain {
+        display: none;
+    }
+    .catalog {
+        justify-content: center;
+    }
+}
+
+
+/*-----------------------------*/
+
+.formAdd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 97%;
+    height: 283px;
+}
+
+.inputName,
+.inputWritter,
+.inputImage {
+    margin: 0 10px;
+    border-radius: 10px;
+    outline: none;
+    width: 250px;
+    padding-left: 5px;
+}
+
+.inputPrice {
+    border-radius: 10px;
+    margin: 0 20px;
+    outline: none;
+    width: 250px;
+    padding-left: 5px;
+}
+
+.form {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation-name: darkle;
+    animation-duration: 0.4s
+}
+
+.formHeader {
+    padding: 2px 16px;
+    background-color: rgb(24, 24, 26);
+    color: white;
+}
+
+.formMain {
+    height: 300px;
+    padding: 2px 16px;
+}
+
+.slideForm {
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(31, 38, 55);
+    width: 100%;
+    color: white;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    text-decoration: none;
+    cursor: pointer;
+    transform: rotate(30deg);
+}
+
+@keyframes slideIn {
+    0% {
+        bottom: -500px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes darkle {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}

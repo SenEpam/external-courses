@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Books shop</title>
+    <link rel="stylesheet" href="123.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div tabindex="1" class="headerCell">Help Center</div>
+            <div tabindex="1" class="headerCell">Out Support</div>
+            <div tabindex="1" class="headerCell">
+                <img class="headerCellPhoto" src="images/bookElem1.png" alt="button"> John Doe
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="formId" class="form">
+            <div class="slideForm">
+                <div class="formHeader">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="formMain">
+                    <form action="handler.php" method="GET">
+                        <fieldset class="formAdd">
+                            <legend>Add a book: </legend>
+                            <label>Name: 
+                                    <input class="inputName" type="text" name="name" placeholder="  Write text..."></label></br>
+                            </br>
+                            <label>Writter: 
+                                    <input class="inputWritter" type="text" name="writer"placeholder="  Write text..."></label></br>
+                            </br>
+                            <label>Price: 
+                                    <input class="inputPrice" type="text" name="price"placeholder="  Write text..."></label></br>
+                            </br>
+                            <label>Image: 
+                                    <input class="inputImage" type="file" name="image"placeholder="  Write text..."></label></br>
+                            </br>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <aside>
+            <div class="sideBarFlex">
+                <div class="buttonDivAdd">
+                    <button id="buttonAdd" class="buttonAdd">
+                        <img class="plus" src="images/plus.png" alt="button">
+                        ADD A BOOK
+                    </button>
+                </div>
+                <div class="menu">
+                    <div class="cellImgDiv">
+                        <img class="cellImg" src="images/book.png" alt=".">
+                        <div class="cellDiv">Now Reading</div>
+                    </div>
+                    <div class="cellImgDiv">
+                        <img class="cellImg" src="images/earth.png" alt=".">
+                        <div class="cellDiv">Brouse</div>
+                    </div>
+                    <div class="cellImgDiv">
+                        <img class="cellImg" src="images/cart.png" alt=".">
+                        <div class="cellDiv">Buy Books</div>
+                    </div>
+                    <div class="cellImgDiv">
+                        <img class="cellImg" src="images/star.png" alt=".">
+                        <div class="cellDiv">Favouroite Books</div>
+                    </div>
+                    <div class="cellImgDiv">
+                        <img class="cellImg" src="images/list.png" alt=".">
+                        <div class="cellDiv">Wishlist</div>
+                    </div>
+                    <div class="cellImgDiv">
+                        <img class="cellImg" src="images/clock.png" alt=".">
+                        <div class="cellDiv">History</div>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li class="firstLi"> Must Read Titles</li>
+                        <li class="secondLi"> Best Of List</li>
+                        <li class="thirdLi"> Classic Novels</li>
+                        <li class="fourthLi"> Non Fiction</li>
+                    </ul>
+                </div>
+                <div class="historyMain">
+                    <div class="historyChild1">
+                        <img class="historyImg" src="images/clock.png" alt=".">
+                        <div class="historyDiv">
+                            <div>You added <span>
+                                 Fight Club</span> by <span>Chuck Palahniuk</span> to your <span>Must Read Titles</span>.</div>
+                            <br>
+                            <div>24 minutes ago</div>
+                        </div>
+                    </div>
+                    <div class="historyChild2">
+                        <img class="historyImg" src="images/clock.png" alt=".">
+                        <div class="historyDiv">
+                            <div>You added <span>The Trial</span> by <span>Franz Kafka</span> to your <span>Must Read Titles</span>.</div>
+                            <br>
+                            <div>48 minutes ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <article>
+
+            <h1>Browse Available Books</h1>
+
+            <div class="filtersAndSearch">
+                <div class="filters">
+                    <button class="filter">All books</button>
+                    <button class="filter">Most resent</button>
+                    <button class="filter">Most Popular</button>
+                    <button class="filter">Free Books</button>
+                </div>
+
+                <form class="search">
+                    <input id="searchText" class="searchText" type="text" placeholder="Enter Keywords...">
+                    <button id="searchButton" class="searchButton" type="submit"></button>
+                </form>
+
+            </div>
+
+            <div class="catalog">
+                <div class="cell">
+                    <img class="cell_inside" src="images/bookElem1.png" alt="sorry">
+                    <p>Jevals of Nizam</p>
+                    <p>by Geota Devi</p>
+
+                </div>
+                <div class="cell">
+                    <img class="cell_inside" src="images/bookElem2.png" alt="sorry">
+                    <p>Jevals of Nizam</p>
+                    <p>by Geota Devi</p>
+
+                </div>
+                <div class="cell">
+                    <img class="cell_inside" src="images/bookElem3.png" alt="sorry">
+                    <p>Jevals of Nizam</p>
+                    <p>by Geota Devi</p>
+                </div>
+                <div class="cell">
+                    <img class="cell_inside" src="images/bookElem4.png" alt="sorry">
+                    <p>Jevals of Nizam</p>
+                    <p>by Geota Devi</p>
+
+                </div>
+                <div class="cell">
+                    <img class="cell_inside" src="images/bookElem5.png" alt="sorry">
+                    <p>Jevals of Nizam</p>
+                    <p>by Geota Devi</p>
+
+                </div>
+                <div class="cell">
+                    <img class="cell_inside" src="images/bookElem6.png" alt="sorry">
+                    <p>Jevals of Nizam</p>
+                    <p>by Geota Devi</p>
+
+                </div>
+                <div class="cell">
+                    <img class="cell_inside" src="images/bookElem7.png" alt="sorry">
+                    <p>Jevals of Nizam</p>
+                    <p>by Geota Devi</p>
+
+                </div>
+                <div class="cell">
+                    <img class="cell_inside" src="images/bookElem8.png" alt="sorry">
+                    <p>Jevals of Nizam</p>
+                    <p>by Geota Devi</p>
+
+                </div>
+                <div class="cell">
+                    <img class="cell_inside" src="images/bookElem9.png" alt="sorry">
+                    <p>Jevals of Nizam</p>
+                    <p>by Geota Devi</p>
+
+                </div>
+                <div class="cell">
+                    <img class="cell_inside" src="images/bookElem10.png" alt="sorry">
+                    <p>Jevals of Nizam</p>
+                    <p>by Geota Devi</p>
+
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footer">
+            <div tabindex="2" class="footerCell">0</div>
+            <div tabindex="2" class="footerCell">0</div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="addBook.js"></script>
+</body>
+
+</html>
