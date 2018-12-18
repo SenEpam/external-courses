@@ -1,0 +1,47 @@
+@keyframes load {
+    0% {
+        transform: rotate(-360deg);
+    }
+    11% {
+        box-shadow: -30px -30px 0 0 crimson, 30px 30px 0 0 red, -30px 30px 0 0 blue, 30px -30px 0 0 yellow, 0 -45px 0 0 grey, 0 45px 0 0 orange, 45px 0 0 0 aqua, -45px 0 0 0 brown;
+    }
+    22% {
+        box-shadow: -30px -30px 0 0 brown, 30px 30px 0 0 crimson, -30px 30px 0 0 red, 30px -30px 0 0 blue, 0 -45px 0 0 yellow, 0 45px 0 0 grey, 45px 0 0 0 orange, -45px 0 0 0 aqua;
+    }
+    33% {
+        box-shadow: -30px -30px 0 0 aqua, 30px 30px 0 0 brown, -30px 30px 0 0 crimson, 30px -30px 0 0 red, 0 -45px 0 0 blue, 0 45px 0 0 yellow, 45px 0 0 0 grey, -45px 0 0 0 orange;
+    }
+    44% {
+        box-shadow: -30px -30px 0 0 orange, 30px 30px 0 0 aqua, -30px 30px 0 0 brown, 30px -30px 0 0 crimson, 0 -45px 0 0 red, 0 45px 0 0 blue, 45px 0 0 0 yellow, -45px 0 0 0 grey;
+    }
+    50% {
+        box-shadow: 0 0 0 0;
+    }
+    55% {
+        box-shadow: -30px -30px 0 0 grey, 30px 30px 0 0 orange, -30px 30px 0 0 aqua, 30px -30px 0 0 brown, 0 -45px 0 0 crimson, 0 45px 0 0 red, 45px 0 0 0 blue, -45px 0 0 0 yellow;
+    }
+    66% {
+        box-shadow: -30px -30px 0 0 yellow, 30px 30px 0 0 grey, -30px 30px 0 0 orange, 30px -30px 0 0 aqua, 0 -45px 0 0 brown, 0 45px 0 0 crimson, 45px 0 0 0 red, -45px 0 0 0 blue;
+    }
+    77% {
+        box-shadow: -30px -30px 0 0 blue, 30px 30px 0 0 yellow, -30px 30px 0 0 rgb(194, 194, 194), 30px -30px 0 0 orange, 0 -45px 0 0 aqua, 0 45px 0 0 brown, 45px 0 0 0 crimson, -45px 0 0 0 crimson;
+    }
+    88% {
+        box-shadow: -30px -30px 0 0 red, 30px 30px 0 0 blue, -30px 30px 0 0 yellow, 30px -30px 0 0 grey, 0 -45px 0 0 orange, 0 45px 0 0 aqua, 45px 0 0 0 brown, -45px 0 0 0 crimson;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 0;
+    height: 0;
+    border: 13px solid transparent;
+    border-radius: 50%;
+    box-shadow: -30px -30px 0 0 rgb(206, 206, 206), 30px 30px 0 0 rgb(206, 206, 206), -30px 30px 0 0 rgb(206, 206, 206), 30px -30px 0 0 rgb(206, 206, 206), 0 -45px 0 0 rgb(206, 206, 206), 0 45px 0 0 rgb(206, 206, 206), 45px 0 0 0 rgb(206, 206, 206), -45px 0 0 0 rgb(206, 206, 206);
+    animation: load 10s infinite alternate;
+}

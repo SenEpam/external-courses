@@ -1,0 +1,16 @@
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px #aaa;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+}

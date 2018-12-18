@@ -1,0 +1,8 @@
+.imgSvg {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 300px;
+    height: 230px;
+    -webkit-clip-path: polygon(70% 34%, 100% 42%, 53% 0, 0 45%, 34% 34%, 48% 81%, 34% 100%, 70% 100%, 55% 81%);
+}
