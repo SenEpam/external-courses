@@ -1,61 +1,56 @@
-'use strict'; 
+"use strict";
 
-class Candy { 
+class Candy {
 
-constructor(name, weight) { 
-this.name = name; 
-this.weight = weight; 
-} 
+    constructor(nameCandy, weight) {
+        this.nameCandy = nameCandy;
+        this.weight = weight;
+    }
 
-} 
+    get name() {
+        return this.nameCandy;
+    }
 
-
-var candy1 = new Candy("Конфета 1", 3); 
-var candy2 = new Candy("Конфета 2", 8); 
-var candy3 = new Candy("Конфета 3", 5); 
-
-
-var newYearGift = [candy1, candy2, candy3]; 
-
-newYearGift.forEach(function(item, i, newYearGift) { 
-console.log(item); 
-}); 
+    set newWeight(weight) {
+        this.weight = weight;
+    }
+}
 
 
-function compareByWeight(candy1, candy2) { 
-return candy2.weight - candy1.weight; 
-} 
-
-newYearGift.sort(compareByWeight); 
-
-console.log(""); 
-console.log(" После сортировки: "); 
-
-newYearGift.forEach(function(item, i, newYearGift) { 
-console.log(item); 
-}); 
+var candy1 = new Candy("Конфета 1", 3);
+var candy2 = new Candy("Конфета 2", 8);
+var candy3 = new Candy("Конфета 3", 5);
 
 
-newYearGift.totalWeight = function() { 
-var totalWeightOfCandies = 0; 
-newYearGift.forEach(function(item, i, newYearGift) { 
-totalWeightOfCandies += item.weight; 
-}); 
-return totalWeightOfCandies; 
-}; 
+class Gift {
+    constructor(sweets) {
+        this.sweets = sweets;
+    }
+    totalWeight() {
+        var weight = 0;
+        this.sweets.forEach(function(item) {
+            weight += item.weight;
+        });
+        return weight;
+    }
+    sorting() {
+        this.sweets.sort(function(a, b) {
+            return a.weight - b.weight;
+        });
+        return this.sweets
+    }
+    findByName(name) {
+        return this.sweets.some(function(item) {
+            return item.name === name;
+        });
+    };
+}
 
 
-newYearGift.findByName = function(name) { 
+var newYearGift = new Gift([candy1, candy2, candy3]);
 
-for (var i = 0; i < newYearGift.length; ++i) { 
-if (newYearGift[i].name == name) return true; 
-} 
-return false; 
-} 
-
-
-console.log(""); 
-console.log(newYearGift.totalWeight()); 
-console.log(""); 
-console.log(newYearGift.findByName("Конфета 2")); 
+console.log("");
+console.log(newYearGift.totalWeight());
+console.log("");
+console.log(newYearGift.findByName("Конфета 2"));
 console.log(newYearGift.findByName("Конфета 5"));
